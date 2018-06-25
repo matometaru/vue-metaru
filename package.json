@@ -1,0 +1,12 @@
+{
+  "license": "UNLICENSED",
+  "scripts": {
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "gsap": "^2.0.1"
+  },
+  "devDependencies": {
+    "vuepress": "^0.10.2"
+  }
+}
