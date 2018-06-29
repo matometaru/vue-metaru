@@ -3,7 +3,6 @@ title: VuePressの画面遷移時にアニメーションを適用する方法
 description: VuePressの画面遷移時にアニメーションを適用する方法を解説します。
 eyecatch: /img/blog/03.jpg
 category: [VuePress]
-sidebar: true
 ---
 
 ## transitionが上手くいかない理由

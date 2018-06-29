@@ -20,6 +20,7 @@ module.exports = {
 		}
 	},
 	themeConfig: {
+		sidebar: 'auto',
 		nav: [
 			{ text: 'Home', link: '/' },
 			{
@@ -31,13 +32,5 @@ module.exports = {
 			 },
 			{ text: 'Twitter', link: 'https://twitter.com/matometaru1' },
 		],
-		sidebar: {
-			'/blog/': [
-				{
-					title: 'Getting Started',
-					collapsable: true,
-				},
-			],
-		}
 	}
 }

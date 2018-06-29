@@ -4,7 +4,11 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "gsap": "^2.0.1"
+    "axios": "^0.18.0",
+    "gsap": "^2.0.1",
+    "sweet-scroll": "^3.0.1",
+    "vue-google-adsense": "^1.2.0",
+    "vue-script2": "^2.0.3"
   },
   "devDependencies": {
     "vuepress": "^0.10.2"

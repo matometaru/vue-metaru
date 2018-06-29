@@ -3,7 +3,6 @@ title: なぜVuePressでブログを書くのか？
 description: WordPress、はてなブログではなく、なぜVuePressを選択したのか。各ブログシステムのメリット・デメリットを交え理由を説明します。
 eyecatch: /img/blog/04.jpg
 category: [VuePress]
-sidebar: true
 ---
 
 ## VuePressのメリット
