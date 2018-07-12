@@ -10,7 +10,6 @@
       </h3>
       <div v-if="page.frontmatter.description" class="article-description">{{page.frontmatter.description}}</div>
       <div class="tags">
-        <i class="fas fa-tags tag-icon"></i>
         <div v-for="c in page.frontmatter.category" class="tag">{{c}}</div>
       </div>
     </div>
@@ -81,4 +80,31 @@ export default {
     padding: 0 .4em;
     font-size: .6em;
     background-color: #f2fff3
+
+@media (max-width: $MQMobileNarrow)
+  .article-container-wrap
+    padding: 10px 15px
+  .article
+    &-container
+      & + .article-container
+        margin-top: 15px
+    &-eyecatch
+      width: 80px;
+      height: 80px;
+    &-content
+      margin-left: 90px;
+    &-title
+      margin: -2px 0 2px;
+      line-height: 1.2;
+      a
+        color: #333;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover
+          color: $accentColor;
+    &-description
+      font-size: 13px
+  .tags
+    margin-top: 5px
 </style>

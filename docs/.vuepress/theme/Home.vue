@@ -42,10 +42,9 @@ export default {
 
 <style lang="stylus">
 @import './styles/config.styl'
-.main {
+.main
   max-width: 960px
   margin: 50px auto
-}
 .home
   padding $navbarHeight 0 0
   margin 0px auto
@@ -110,10 +109,13 @@ export default {
       padding 0 2.5rem
 
 @media (max-width: $MQMobileNarrow)
+  .main
+    margin: 25px auto
   .home
-    padding-left 1.5rem
-    padding-right 1.5rem
+    padding-left 15px
+    padding-right 15px
     .hero
+      margin: 0 -15px
       img
         max-height 210px
         margin 2rem auto 1.2rem
