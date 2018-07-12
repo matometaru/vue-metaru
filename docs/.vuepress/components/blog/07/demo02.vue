@@ -170,6 +170,8 @@ export default {
 </script>
 
 <style lang="stylus">
+
+@import '../../../theme/styles/config.styl'
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Bubbler+One');
 @import url('https://fonts.googleapis.com/earlyaccess/mplus1p.css');
@@ -249,4 +251,8 @@ export default {
   .card
     background: #333
     text-indent: -9999px
+
+@media (max-width: $MQMobileNarrow)
+  .card
+    font-size: 10px
 </style>
