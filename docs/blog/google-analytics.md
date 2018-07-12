@@ -2,7 +2,7 @@
 title: VuePressとGoogleアナリティクスを連携する方法
 description: VuePressとGoogleアナリティクスを連携して、アクセスの解析の確認まで行います。
 eyecatch: /img/blog/01.png
-category: [VuePress,google]
+category: [VuePress,Google]
 ---
 
 ## Googleアナリティクスとは

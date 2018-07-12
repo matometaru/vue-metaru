@@ -147,11 +147,11 @@ export default {
   methods: {
     enter () {
       // window.alert("遷移前のアニメーション");
-      this.oBubbles.start();
+      // this.oBubbles.start();
     },
     leave () {
       // window.alert("遷移後のアニメーション");
-      this.oBubbles.addStop();
+      // this.oBubbles.addStop();
     },
     toggleSidebar (to) {
       this.isSidebarOpen = typeof to === 'boolean' ? to : !this.isSidebarOpen

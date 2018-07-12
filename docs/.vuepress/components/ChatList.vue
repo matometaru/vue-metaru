@@ -5,13 +5,12 @@
         <div class="chat-search">
           <a href="#chid-15">chid-15</a>
           <input type="text" class="chat-search-input" v-model="word" @focusout="focusOut">
-          <div class="chat-search-result" v-show="isResult">
+          <div class="chat-search-result" v-show="isResult" ref="chatSearchResult">
             <div class="chat-search-result-item" v-for="(match,key) in matched"><a :href="'#chid-' + match.id" data-scroll>{{ match.content | trimTag | trimChar }}</a></div>
           </div>
         </div>
         <div class="chat-sort">
           <span class="chat-sort-date" @click="sort">日付順</span>
-          <a href="#この記事での技術メモ" data-scroll>この記事での技術メモ</a>
         </div>
       </div>
       <div class="chat-container" v-for="(item,key) in items" :id="'chid-' + item.id">
@@ -61,7 +60,7 @@ export default {
   },
   mounted() {
   },
-  data () {
+  data() {
     return {
       items: [
         {
@@ -91,18 +90,36 @@ export default {
         }
       ],
       word: "",
+      sortKey: "",
       ss: "",
     }
   },
   computed: {
     matched: function() {
-      return this.items.filter((el)=>{
-        return el.content.indexOf(this.word) != -1
-      }, this)
+      // return this.items.filter((row)=>{
+      //   return row.content.indexOf(this.word) != -1
+      // })
+      const filterKey = this.word
+      const sortKey = this.sortKey
+      let data = this.items
+      if (filterKey) {
+        data = data.filter((row)=> {
+          return Object.keys(row).some(function (key) {
+            console.log(row[key])
+            return String(row[key]).indexOf(filterKey) > -1
+          })
+        }, this)
+      }
+      if (sortKey) {
+        data = data.slice().sort(function (a, b) {
+          a = a[sortKey]
+          b = b[sortKey]
+          return (a === b ? 0 : a > b ? 1 : -1) * order
+        })
+      }
+      return data
     },
     isResult: function() {
-      console.log(this.matched.length)
-      console.log(this.word)
       return ( this.matched.length == 0 || this.word == "" ) ? false : true
     }
   },
@@ -130,9 +147,9 @@ export default {
         if(this.$refs.chatIn.offsetHeight < 500)
           this.$refs.chat.style.height = 'auto'
 
-
+        console.log(this.$refs.chatSearchResult.offsetHeight)
         this.ss = new SweetScroll({
-          offset: 0,
+          offset: 202, // .chat-search-resultの高さ分設定 
           trigger: "a[href^='#']"
         }, this.$refs.chatIn);
       })

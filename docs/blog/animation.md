@@ -10,6 +10,15 @@ category: [VuePress]
 VuePressのコンテンツを構成しているテンプレートはPage.vueとHome.vueになります。
 Layout.vueの以下の箇所に`<transition>`を追加してもPage.vue <-> Home.vue間では有効ですが、Page.vue<->Page.vueでは効きません。 
 
+<InFeedAdsense
+	data-ad-layout-key="-fg+5n+6t-e7+r"
+    data-ad-client="ca-pub-9870466105427266">
+</InFeedAdsense>
+
+::: warning
+以下の方法で実装するとページ内リンクでもアニメーションが開始します。
+:::
+
 ## 遷移前と遷移後に実行する
 
 VuePressもVueRouterを使用しています。

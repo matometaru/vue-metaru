@@ -1,7 +1,7 @@
 ---
-title: カテゴリ｜VuePress｜Vue Metaru
-description: VuePressに関連する記事一覧ページです。
-category: VuePress
+title: カテゴリ｜JavaScript｜Vue Metaru
+description: JavaScriptに関連する記事一覧ページです。
+category: JavaScript
 sidebar: false
 ---
 

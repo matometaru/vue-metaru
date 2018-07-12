@@ -1,0 +1,1000 @@
+[
+    {
+        "id": 2225,
+        "date": "2018-06-13T00:19:54",
+        "date_gmt": "2018-06-12T15:19:54",
+        "guid": {
+            "rendered": "http://matometaru.com/?p=2225"
+        },
+        "modified": "2018-06-13T00:20:57",
+        "modified_gmt": "2018-06-12T15:20:57",
+        "slug": "post-2225",
+        "status": "publish",
+        "type": "post",
+        "link": "http://matometaru.com/post-2225/",
+        "title": {
+            "rendered": "Vueのフィルターのコレクション、vue-filterが便利でした"
+        },
+        "content": {
+            "rendered": "<p>filter使ってますか？<br />\n関数でも実現できるので使わなくても支障はないのですが、使ってみるとかなり便利で、コードもスッキリしたので是非使ってみてください。<br />\n<a href=\"https://jp.vuejs.org/v2/guide/filters.html\" rel=\"noopener\" target=\"_blank\">フィルター｜Vue.js</a></p>\n<p>フィルターは以下の書籍で知りました。公式ドキュメントにももちろん書いてあるのですが、ドキュメントよりサクサク読めれるのでおすすめです。<br />\n<div data-role=\"amazonjs\" data-asin=\"4863542453\" data-locale=\"JP\" data-tmpl=\"\" data-img-size=\"\" class=\"asin_4863542453_JP_ amazonjs_item\"><div class=\"amazonjs_indicator\"><span class=\"amazonjs_indicator_img\"></span><a class=\"amazonjs_indicator_title\" href=\"https://www.amazon.co.jp/%E5%9F%BA%E7%A4%8E%E3%81%8B%E3%82%89%E5%AD%A6%E3%81%B6-Vue-js-mio/dp/4863542453?SubscriptionId=AKIAJJ7NH3YJYNWQTOLA&tag=metaru731-22&linkCode=xm2&camp=2025&creative=165953&creativeASIN=4863542453\">基礎から学ぶ Vue.js</a><span class=\"amazonjs_indicator_footer\"></span></div></div></p>\n<h2>フィルターの使い方</h2>\n<p>3をフィルターを使い03と出力します。</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\n{{ 3 | zeroPadding(2) }}\r\n</pre>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\nVue.filter('zeroPadding', function(val,num){\r\n    return ('00000000000000' + val).slice(num)\r\n});\r\n</pre>\n<p>グローバルでフィルターを定義することで、どのコンポーネントからでも使えるようになります。</p>\n<h2>vue-filterとは</h2>\n<p>フィルターのセットです。<br />\n<a href=\"https://github.com/wy-ei/vue-filter#toarray\" rel=\"noopener\" target=\"_blank\">wy-ei/vue-filter</a></p>\n<p>個人的にはsizeやtoArrayを結構使ってます。<br />\nその他も便利なものがたくさんありますね。</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\n{{ {&quot;one&quot;:1,&quot;two&quot;:2,&quot;three&quot;:3} | size }} =&gt; 3\r\n</pre>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\n{{ {&quot;0&quot;:1,&quot;1&quot;:2,&quot;2&quot;:3,&quot;3&quot;:4} | toArray }} =&gt; [1,2,3,4]\r\n</pre>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>filter使ってますか？ 関数でも実現できるので使わなくても支障はないのですが、使ってみるとかなり便利で、コードもスッキリしたので是非使ってみてください。 フィルター｜Vue.js フィルターは以下の書籍で知りました。&#8230;</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 2227,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            37
+        ],
+        "tags": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2225"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/comments?post=2225"
+                }
+            ],
+            "version-history": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2225/revisions"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/media/2227"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/media?parent=2225"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/categories?post=2225"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/tags?post=2225"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 2219,
+        "date": "2018-06-03T12:53:04",
+        "date_gmt": "2018-06-03T03:53:04",
+        "guid": {
+            "rendered": "http://matometaru.com/?p=2219"
+        },
+        "modified": "2018-06-03T12:54:24",
+        "modified_gmt": "2018-06-03T03:54:24",
+        "slug": "post-2219",
+        "status": "publish",
+        "type": "post",
+        "link": "http://matometaru.com/post-2219/",
+        "title": {
+            "rendered": "【備忘録】渋谷ではたらく社長の告白"
+        },
+        "content": {
+            "rendered": "<div data-role=\"amazonjs\" data-asin=\"4344420160\" data-locale=\"JP\" data-tmpl=\"\" data-img-size=\"\" class=\"asin_4344420160_JP_ amazonjs_item\"><div class=\"amazonjs_indicator\"><span class=\"amazonjs_indicator_img\"></span><a class=\"amazonjs_indicator_title\" href=\"https://www.amazon.co.jp/%E6%B8%8B%E8%B0%B7%E3%81%A7%E3%81%AF%E3%81%9F%E3%82%89%E3%81%8F%E7%A4%BE%E9%95%B7%E3%81%AE%E5%91%8A%E7%99%BD%E3%80%88%E6%96%B0%E8%A3%85%E7%89%88%E3%80%89-%E5%B9%BB%E5%86%AC%E8%88%8E%E6%96%87%E5%BA%AB-%E8%97%A4%E7%94%B0-%E6%99%8B/dp/4344420160?SubscriptionId=AKIAJJ7NH3YJYNWQTOLA&tag=metaru731-22&linkCode=xm2&camp=2025&creative=165953&creativeASIN=4344420160\">渋谷ではたらく社長の告白〈新装版〉 (幻冬舎文庫)</a><span class=\"amazonjs_indicator_footer\"></span></div></div>\n<p>サイバーエージェントの藤田社長の本。<br />\n大学時代のバイトの話から、上場後の黒字化までの奮闘がメインの話です。</p>\n<h2>印象に残った言葉</h2>\n<p>「ハッタリでもいいから、とりあえず実績を口に出して言ってしまって、次に会うときまでに本当に実績を作ればいいんだ」<br />\n「実績が出来なかったら？」<br />\n「もちろん、そしたらただの嘘つきになっちゃうけどな」</p>\n<p>始めたばかりの会社は取引もまだ少なく、はっきり言って、意外とやることがなくて暇なのです。ところが、長時間働くことが決まっているので、余った時間に顧客見込みリストを作ったり〜〜することになります。それらを全てこなしているうちに業績が伸び、新事業が生まれ、やがて時間を決めなくても本当に忙しくなっていったのです。</p>\n<h2>思ったこと</h2>\n<p>営業出身で、今出来ないことでも出来るといい、仕事を獲得し、出来るようにするスタイル。<br />\n従業員は大変だろうが、同じ方向に自ら進んでくれる社員が数人いたのが大きいと思う。<br />\n思い切りの良さと有言実行を兼ね備えて乗るで、すごいスピードで成長出来たんだなと思った。<br />\n先行投資の鬼。</p>\n<h2>まとめ</h2>\n<p>宇野社長がかっこいい。<br />\n<div data-role=\"amazonjs\" data-asin=\"4344420160\" data-locale=\"JP\" data-tmpl=\"\" data-img-size=\"\" class=\"asin_4344420160_JP_ amazonjs_item\"><div class=\"amazonjs_indicator\"><span class=\"amazonjs_indicator_img\"></span><a class=\"amazonjs_indicator_title\" href=\"https://www.amazon.co.jp/%E6%B8%8B%E8%B0%B7%E3%81%A7%E3%81%AF%E3%81%9F%E3%82%89%E3%81%8F%E7%A4%BE%E9%95%B7%E3%81%AE%E5%91%8A%E7%99%BD%E3%80%88%E6%96%B0%E8%A3%85%E7%89%88%E3%80%89-%E5%B9%BB%E5%86%AC%E8%88%8E%E6%96%87%E5%BA%AB-%E8%97%A4%E7%94%B0-%E6%99%8B/dp/4344420160?SubscriptionId=AKIAJJ7NH3YJYNWQTOLA&tag=metaru731-22&linkCode=xm2&camp=2025&creative=165953&creativeASIN=4344420160\">渋谷ではたらく社長の告白〈新装版〉 (幻冬舎文庫)</a><span class=\"amazonjs_indicator_footer\"></span></div></div></p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>サイバーエージェントの藤田社長の本。 大学時代のバイトの話から、上場後の黒字化までの奮闘がメインの話です。 印象に残った言葉 「ハッタリでもいいから、とりあえず実績を口に出して言ってしまって、次に会うときまでに本当に実績&#8230;</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 2222,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            1
+        ],
+        "tags": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2219"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/comments?post=2219"
+                }
+            ],
+            "version-history": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2219/revisions"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/media/2222"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/media?parent=2219"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/categories?post=2219"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/tags?post=2219"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 2205,
+        "date": "2018-05-25T23:28:48",
+        "date_gmt": "2018-05-25T14:28:48",
+        "guid": {
+            "rendered": "http://matometaru.com/?p=2205"
+        },
+        "modified": "2018-05-25T23:31:28",
+        "modified_gmt": "2018-05-25T14:31:28",
+        "slug": "post-2205",
+        "status": "publish",
+        "type": "post",
+        "link": "http://matometaru.com/post-2205/",
+        "title": {
+            "rendered": "【すいば】安くて美味しい京都の居酒屋でとんでもないメニューが出てきた"
+        },
+        "content": {
+            "rendered": "<p>みなさんご存知、京都の四条で安く飲めるおしゃれな居酒屋すいば。<br />\n普通の居酒屋の感覚で飲んでも料金が2,000円に届かずびっくりすることが多いです！</p>\n<div id=\"toc_container\" class=\"no_bullets\"><p class=\"toc_title\">Contents</p><ul class=\"toc_list\"><li><a href=\"#i\"><span class=\"toc_number toc_depth_1\">1</span> おすすめメニュー</a><ul><li><a href=\"#i-2\"><span class=\"toc_number toc_depth_2\">1.1</span> 日本酒のおすすめ</a></li><li><a href=\"#i-3\"><span class=\"toc_number toc_depth_2\">1.2</span> 魚のおすすめ</a></li><li><a href=\"#i-4\"><span class=\"toc_number toc_depth_2\">1.3</span> その他のおすすめ</a></li></ul></li><li><a href=\"#i-5\"><span class=\"toc_number toc_depth_1\">2</span> とんでもないメニュー</a></li><li><a href=\"#i-6\"><span class=\"toc_number toc_depth_1\">3</span> このクオリティのメニューをこの値段食べれるのは花遊小路のすいばだけ</a></li></ul></div>\n<h2><span id=\"i\">おすすめメニュー</span></h2>\n<ul>\n<li>日本酒全般\n<li>魚\n<li>その他\n</ul>\n<p>基本的に日本酒と、その他のメニューを頼みます。</p>\n<h3><span id=\"i-2\">日本酒のおすすめ</span></h3>\n<p>日本酒は各地の様々な銘柄があり380〜600円の価格で飲めます。（120mlぐらい？）<br />\n回転が早いのか、劣化してるものに出会ったことはありません。<br />\n以下はおすすめの定番日本酒です。</p>\n<ul>\n<li>鳳凰美田（花遊小路）\n<li>作（花遊小路）\n<li>尾瀬の雪どけ（蛸薬師）\n<li>愛宕の松（河原町店）\n</ul>\n<h3><span id=\"i-3\">魚のおすすめ</span></h3>\n<p>魚はカマ焼きがおすすめです。<br />\n日本酒に最高にあい、かなりの時間あてになってくれるので最高です。<br />\nただ、魚の種類によっては身があまりついてない可能性もあるので、<br />\nあまり過度な期待はしないようにしたほうがいいかもしれません。（250円前後）</p>\n<h3><span id=\"i-4\">その他のおすすめ</span></h3>\n<p>150円〜からあり、各店舗によってそれぞれ特徴があり面白いです。</p>\n<ul>\n<li>黒胡椒メンマ（六角店）\n<li>おでん（蛸薬師：冬）\n<li>タコの唐揚げ（全般）\n</ul>\n<p><a href=\"https://www.suiba.jp/menu/\" rel=\"noopener\" target=\"_blank\">メニュー｜オシャレな立ち飲み屋さん|すいば</a></p>\n<h2><span id=\"i-5\">とんでもないメニュー</span></h2>\n<p>この記事を書くきっかけとなったとんでもないメニューを紹介します。</p>\n<p>「酒肴盛り一人前」（600円）</p>\n<p><img src=\"http://matometaru.com/wp-content/uploads/2018/05/suiba01.jpg\" alt=\"すいば\" width=\"1200\" height=\"900\" class=\"alignnone size-full wp-image-2209\" srcset=\"http://matometaru.com/wp-content/uploads/2018/05/suiba01.jpg 1200w, http://matometaru.com/wp-content/uploads/2018/05/suiba01-300x225.jpg 300w, http://matometaru.com/wp-content/uploads/2018/05/suiba01-768x576.jpg 768w, http://matometaru.com/wp-content/uploads/2018/05/suiba01-546x410.jpg 546w, http://matometaru.com/wp-content/uploads/2018/05/suiba01-320x240.jpg 320w\" sizes=\"(max-width: 1200px) 100vw, 1200px\" /></p>\n<p>めっちゃ多いですね（笑）</p>\n<p>8品あるので1品あたり75円？スーパーの半額お惣菜より安いです（笑）<br />\nそして圧倒的に美味しいです。</p>\n<p>間違えて２人前で出してししまったのかと思いつつレシート確認するも&#8230;<br />\n600円！！<br />\n（※日替わりメニューだったはずなので、次行った時はないかもしれません）</p>\n<p>なんか申し訳ない気持ちになりつつ、最高の満足感でお店を後にしました。</p>\n<h2><span id=\"i-6\">このクオリティのメニューをこの値段食べれるのは花遊小路のすいばだけ</span></h2>\n<p><a href=\"http://www.shun.suiba.jp/\" target=\"_blank\">【京都四条河原町すぐの居酒屋】旬ダイニングすいば</a></p>\n<p><iframe style=\"border: 0px currentColor;\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.102472875014!2d135.76564005010906!3d35.0041398802613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010895b3bfdf1b%3A0xc854441e1070817f!2z44CSNjA0LTgwNDIg5Lqs6YO95bqc5Lqs6YO95biC5Lit5Lqs5Yy65Lit5LmL55S677yI5paw5Lqs5qW16YCa77yJ77yV77yW77yV4oiS77yS77yTIOODj-ODrOOBruaXpeiKsemBiuWwj-i3ryAyRg!5e0!3m2!1sja!2sjp!4v1522030400140\" width=\"600\" height=\"450\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n<p>他の店舗のすいばは「びっくりするほど安くて、美味しい」、花遊小路のすいばは「安くて、めっちゃ美味しい」って感じですかね。</p>\n<p>「すいば」は今後まだまだ店舗拡大していくと思います。<br />\n株式会社マリオが上場して、すいばの優待券を出してくれる日を心待ちにしております。</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>みなさんご存知、京都の四条で安く飲めるおしゃれな居酒屋すいば。 普通の居酒屋の感覚で飲んでも料金が2,000円に届かずびっくりすることが多いです！ Contents1 おすすめメニュー1.1 日本酒のおすすめ1.2 魚の&#8230;</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 2211,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            1
+        ],
+        "tags": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2205"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/comments?post=2205"
+                }
+            ],
+            "version-history": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2205/revisions"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/media/2211"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/media?parent=2205"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/categories?post=2205"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/tags?post=2205"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 2202,
+        "date": "2018-05-23T00:40:27",
+        "date_gmt": "2018-05-22T15:40:27",
+        "guid": {
+            "rendered": "http://matometaru.com/?p=2202"
+        },
+        "modified": "2018-05-23T00:40:27",
+        "modified_gmt": "2018-05-22T15:40:27",
+        "slug": "post-2202",
+        "status": "publish",
+        "type": "post",
+        "link": "http://matometaru.com/post-2202/",
+        "title": {
+            "rendered": "【Vue.js】VeeValidateでform要素をコンポーネント化したが、いまいちだった件"
+        },
+        "content": {
+            "rendered": "<p>引き続きVeeValidate使っています。</p>\n<p><p>VeeValidateでform要素を子コンポーネント化してみたので参考になれば。</p>\n<p><a href=\"http://matometaru.com/post-2197/\"></a></p>\n<h2>コンポーネント化</h2>\n<p>エラークラスの付ける要素が変わったり、使い回し易さを考えコンポーネント化してみました。</p>\n<p>TextField.vue（子）</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\n&lt;template&gt;\r\n    &lt;div v-bind:class=&quot;[{ is_error: validateState}, wrapClass]&quot;&gt;\r\n        &lt;input :id=&quot;id&quot; :type=&quot;type&quot;\r\n               :name=&quot;name&quot;\r\n               :placeholder=&quot;placeholder&quot;\r\n               class=&quot;form-control&quot;\r\n               v-validate=&quot;validate&quot;\r\n               :data-vv-as=&quot;label&quot;\r\n               :value=&quot;value&quot;\r\n               @input=&quot;updateValue&quot;\r\n        &gt;\r\n        &lt;p v-if=&quot;validateState&quot; class=&quot;form-message&quot;&gt;{{ errors.first(name) }}&lt;/p&gt;\r\n    &lt;/div&gt;\r\n&lt;/template&gt;\r\n\r\n&lt;script&gt;\r\n    export default {\r\n        inject: ['$validator'],\r\n        props: {\r\n            wrapClass: String,\r\n            id: String,\r\n            name: String,\r\n            type: String,\r\n            validate: String,\r\n            placeholder: String,\r\n            label: String,\r\n            value: {},\r\n        },\r\n        computed: {\r\n            validateState() {\r\n                return this.errors.has(this.id)&amp;&amp;this.validate ? true : false;\r\n            }\r\n        },\r\n        methods: {\r\n            updateValue(e) {\r\n                this.$emit('input', e.target.value)\r\n                this.$emit('change', e.target.value)\r\n            }\r\n        }\r\n    }\r\n&lt;/script&gt;\r\n</pre>\n<p>親から呼び出し</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\n&lt;div class=&quot;row&quot;&gt;\r\n    &lt;text-field wrapClass=&quot;col-md-6&quot; id=&quot;first_name&quot; name=&quot;first_name&quot;\r\n                label=&quot;姓&quot; placeholder=&quot;姓&quot;\r\n                validate=&quot;required&quot; v-model=&quot;user.user.first_name&quot;&gt;&lt;/text-field&gt;\r\n&lt;/div&gt;\r\n</pre>\n<p>出力される要素</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\n&lt;div data-v-3e2ac97c=&quot;&quot; class=&quot;is_error col-md-6&quot;&gt;&lt;input id=&quot;first_name&quot; name=&quot;first_name&quot; placeholder=&quot;姓&quot; data-vv-as=&quot;姓&quot; class=&quot;form-control&quot; aria-required=&quot;true&quot; aria-invalid=&quot;true&quot;&gt; &lt;p class=&quot;form-message&quot;&gt;姓は必須項目です&lt;/p&gt;&lt;/div&gt;\r\n</pre>\n<h2>まとめ</h2>\n<p>親から各子コンポーネントのエラー状態を取得できないので、ストアパターンなどで頑張ってみたが私には無理でした。<br />\n結局inject: [&#8216;$validator&#8217;]を使い上記のような形になりました。</p>\n<p>inject: [&#8216;$validator&#8217;]は推奨されておらず、親、子ともに冗長な気がするので普通に親コンポーネントでVeeValidateを当てていく形がいいのかなと思いました。</p>\n<p>参考記事<br />\n<a href=\"https://qiita.com/ryo511/items/29c04bd2c7be353ef672\" rel=\"noopener\" target=\"_blank\">[Vue.js] VeeValidateで入れ子のフォームを作る</a><br />\n<a href=\"https://qiita.com/wakame_isono_/items/611e51ff965d698bbc7c\" rel=\"noopener\" target=\"_blank\"> Vue.jsでForm部品をComponent化する</a></p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>引き続きVeeValidate使っています。 VeeValidateでform要素を子コンポーネント化してみたので参考になれば。 コンポーネント化 エラークラスの付ける要素が変わったり、使い回し易さを考えコンポーネント化&#8230;</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 2198,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            37
+        ],
+        "tags": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2202"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/comments?post=2202"
+                }
+            ],
+            "version-history": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2202/revisions"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/media/2198"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/media?parent=2202"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/categories?post=2202"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/tags?post=2202"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 2197,
+        "date": "2018-05-20T21:38:55",
+        "date_gmt": "2018-05-20T12:38:55",
+        "guid": {
+            "rendered": "http://matometaru.com/?p=2197"
+        },
+        "modified": "2018-05-20T21:39:51",
+        "modified_gmt": "2018-05-20T12:39:51",
+        "slug": "post-2197",
+        "status": "publish",
+        "type": "post",
+        "link": "http://matometaru.com/post-2197/",
+        "title": {
+            "rendered": "【Vue.js】快適なバリデーションが設定できるVeeValidateを日本語化"
+        },
+        "content": {
+            "rendered": "<p>VeeValidate非常に使いやすかったので紹介します。<br />\n<a href=\"https://baianat.github.io/vee-validate/\" rel=\"noopener\" target=\"_blank\">VeeValidate</a></p>\n<h2>VeeValidateを日本語化</h2>\n<p>日本語ファイルを読み込み、カスタム設定も読み込みます。<br />\nデフォルトのmessage.requiredに「!!」を付与しています。</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\n// 日本語ファイルを読み込み\r\nimport ja from 'vee-validate/dist/locale/ja'\r\n// 日本語ファイル上書き\r\nconst dict = {\r\n    custom: {\r\n        last_name: {\r\n            required: '名は必須項目です'\r\n        }\r\n    },\r\n    messages: {\r\n        required: (n) =&gt; n + 'は必須項目です!!'\r\n    }\r\n};\r\n</pre>\n<p>このままでは「n」の箇所がnameの値になり、「firts_nameは必須です!!」というエラーが出力されます。<br />\ndata-vv-as=&#8221;姓&#8221;でnameの値を変更することが出来ます。<br />\n以下の設定で「姓は必須です!!」というメッセージが出力されるようになります。</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\n&lt;div class=&quot;form-group&quot;&gt;\r\n    &lt;label for=&quot;name&quot; class=&quot;control-label&quot;&gt;名前&lt;/label&gt;\r\n    &lt;div class=&quot;row&quot;&gt;\r\n        &lt;div class=&quot;col-md-6&quot; v-bind:class=&quot;{ is_error: errors.has('first_name') }&quot;&gt;\r\n            &lt;input id=&quot;first_name&quot; type=&quot;text&quot; name=&quot;first_name&quot; class=&quot;form-control&quot; placeholder=&quot;姓&quot;\r\n            v-model=&quot;user.user.first_name&quot;\r\n            v-validate=&quot;'required'&quot;\r\n            data-vv-as=&quot;姓&quot;\r\n            &gt;\r\n            &lt;p v-if=&quot;errors.has('first_name')&quot; class=&quot;form-message&quot;&gt;{{ errors.first('first_name') }}&lt;/p&gt;\r\n        &lt;/div&gt;\r\n        &lt;div class=&quot;col-md-6&quot; v-bind:class=&quot;{ is_error: errors.has('last_name') }&quot;&gt;\r\n            &lt;input id=&quot;last_name&quot; type=&quot;text&quot; name=&quot;last_name&quot; class=&quot;form-control&quot; placeholder=&quot;名&quot;\r\n                   v-model=&quot;user.user.last_name&quot;\r\n                   v-validate=&quot;'required'&quot;\r\n                   data-vv-as=&quot;名&quot;\r\n            &gt;\r\n            &lt;p v-if=&quot;errors.has('last_name')&quot; class=&quot;form-message&quot;&gt;{{ errors.first('last_name') }}&lt;/p&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n&lt;/div&gt;\r\n</pre>\n<h2>その他の使い方</h2>\n<p>{{errors.count()}}で簡単に残りのエラー数が取得出来たり、<br />\n以下のようなメソッドをsubmitボタンに設定しておけば、エラーの要素位置にスクロールすることが簡単に実装できます。</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\n&lt;script&gt;\r\n    export default {\r\n        methods: {    \r\n            register () {\r\n                this.$validator.validateAll().then(() =&gt; {\r\n                    var element = document.getElementById(this.errors.items[0].field);\r\n                    element.scrollIntoView({behavior: 'smooth', block: 'center'});\r\n                }).catch(() =&gt; {\r\n                    alert(this.errors.all())\r\n                })\r\n            },\r\n        }\r\n    };\r\n&lt;/script&gt;\r\n</pre>\n<p>Vue.jsでフォームを実装する機会がありましたら、是非使ってみてください。</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>VeeValidate非常に使いやすかったので紹介します。 VeeValidate VeeValidateを日本語化 日本語ファイルを読み込み、カスタム設定も読み込みます。 デフォルトのmessage.requiredに&#8230;</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 2198,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            37
+        ],
+        "tags": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2197"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/comments?post=2197"
+                }
+            ],
+            "version-history": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2197/revisions"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/media/2198"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/media?parent=2197"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/categories?post=2197"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/tags?post=2197"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 2191,
+        "date": "2018-05-19T14:15:31",
+        "date_gmt": "2018-05-19T05:15:31",
+        "guid": {
+            "rendered": "http://matometaru.com/?p=2191"
+        },
+        "modified": "2018-05-19T14:15:31",
+        "modified_gmt": "2018-05-19T05:15:31",
+        "slug": "pay-vue",
+        "status": "publish",
+        "type": "post",
+        "link": "http://matometaru.com/pay-vue/",
+        "title": {
+            "rendered": "支払いに便利なPAY.JPをVue.jsからの利用方法"
+        },
+        "content": {
+            "rendered": "<p>シンプルなAPIと豊富なライブラリで、スムーズに決済を組み込むことができる<a href=\"https://pay.jp/\" rel=\"noopener\" target=\"_blank\">PAY.JP</a>をVue.jsから利用してみました。</p>\n<p>デザイン済みの入力フォーム、オリジナルのデザイン（jQuery）を利用したい場合は公式にサンプルコードが掲載されています。<br />\n<a href=\"https://pay.jp/docs/cardtoken\" rel=\"noopener\" target=\"_blank\">カード情報のトークン化</a></p>\n<h2>Vueから利用</h2>\n<p>デザイン済みのものは既にコンポーネント化されてるものがgitにありました。<br />\n<a href=\"https://github.com/ngs/vue-payjp-checkout\" rel=\"noopener\" target=\"_blank\">vue-payjp-checkout</a></p>\n<p>オリジナルデザインの場合は自分でコンポーネントを作成する必要があります。<br />\nmountedのタイミングで&#8221;https://js.pay.jp/&#8221;を、<br />\nsubmitのタイミングで&#8221;Payjp.setPublicKey(&#8216;pk_test_xxxxxxxxxxxxxxxxxxxxxx&#8217;);&#8221;がコンポーネント化する際のポイントかと思います。</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\n&lt;script&gt;\r\nexport default {\r\n    mounted() {\r\n        const scriptMain = document.createElement('script');\r\n        scriptMain.setAttribute('src','https://js.pay.jp/');\r\n        this.$el.appendChild(scriptMain);\r\n    },\r\n    data() {\r\n        return {\r\n            card: {\r\n                number: 4242424242424242,\r\n                cvc: 213,\r\n                exp_month: 1,\r\n                exp_year: 2019,\r\n            },\r\n        }\r\n    },\r\n    methods: {\r\n        submit: function(event) {\r\n            event.preventDefault();\r\n            Payjp.setPublicKey('pk_test_xxxxxxxxxxxxxxxxxxxxxx');\r\n            Payjp.createToken(this.card, function(s, response) {\r\n                if (response.error) {\r\n                    event.target.find('.payment-errors').text(response.error.message);\r\n                    event.target.find('button').prop('disabled', false);\r\n                }\r\n                else {\r\n                    $('[name=&quot;number&quot;]').removeAttr(&quot;name&quot;);\r\n                    $('[name=&quot;cvc&quot;]').removeAttr(&quot;name&quot;);\r\n                    $('[name=&quot;exp_month&quot;]').removeAttr(&quot;name&quot;);\r\n                    $('[name=&quot;exp_year&quot;]').removeAttr(&quot;name&quot;);\r\n\r\n                    var token = response.id;\r\n\r\n                    $('#charge-form').after($('&lt;input type=&quot;hidden&quot; name=&quot;payjp-token&quot;&gt;').val(token));\r\n                }\r\n            });\r\n        }\r\n    }\r\n}\r\n&lt;/script&gt;\r\n</pre>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>シンプルなAPIと豊富なライブラリで、スムーズに決済を組み込むことができるPAY.JPをVue.jsから利用してみました。 デザイン済みの入力フォーム、オリジナルのデザイン（jQuery）を利用したい場合は公式にサンプル&#8230;</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 2194,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            37
+        ],
+        "tags": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2191"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/comments?post=2191"
+                }
+            ],
+            "version-history": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2191/revisions"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/media/2194"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/media?parent=2191"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/categories?post=2191"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/tags?post=2191"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 2188,
+        "date": "2018-05-17T02:27:58",
+        "date_gmt": "2018-05-16T17:27:58",
+        "guid": {
+            "rendered": "http://matometaru.com/?p=2188"
+        },
+        "modified": "2018-05-17T02:27:58",
+        "modified_gmt": "2018-05-16T17:27:58",
+        "slug": "post-2188",
+        "status": "publish",
+        "type": "post",
+        "link": "http://matometaru.com/post-2188/",
+        "title": {
+            "rendered": "Vue.jsのテンプレートの書き方メモ"
+        },
+        "content": {
+            "rendered": "<h2>Vue.jsの様々なテンプレート記述方法</h2>\n<p>公式サイトが非常に丁寧に説明されており、だいたい公式サイトで解決できてたのですが、<br />\nテンプレートの宣言方法はネット上にも様々なパターンがあり、長く混乱に陥っていたがやっと大悟したので、ここにまとめておきます。</p>\n<h3>基本的な宣言</h3>\n<p>index.html</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\n&lt;div id=&quot;app&quot;&gt;\r\n  {{ message }}\r\n&lt;/div&gt;\r\n</pre>\n<p>app.js</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\nvar app = new Vue({\r\n  el: '#app',\r\n  data: {\r\n    message: 'Hello Vue!'\r\n  }\r\n})\r\n</pre>\n<h3>少しややこしい宣言</h3>\n<p><a href=\"https://qiita.com/acro5piano/items/a2c30bdd2b6f1a0d9c7d\" rel=\"noopener\" target=\"_blank\">Laravel 5.4 と Vue.js 2.2 と JWTAuth で、ログインできる SPA アプリケーションのチュートリアル 3/4</a><br />\nこの記事にある宣言方法<br />\nindex.html</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\n&lt;div id=&quot;app&quot;&gt;\r\n&lt;/div&gt;\r\n</pre>\n<p>app.js</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\nconst app = new Vue({\r\n  el: '#app',\r\n  render: h =&gt; h(require('./app.vue')),\r\n}).$mount('#app')\r\n</pre>\n<p>el: &#8216;#app&#8217;と$mount(&#8216;#app&#8217;)は同じ役割なのでどちらか一方でいいです。（タイミングは異なる）<br />\nrenderの記述は以下の2記事を参照してください。<br />\n<a href=\"https://aloerina01.github.io/blog/2017-03-08-1\" rel=\"noopener\" target=\"_blank\">Vue2.x系のハマりどころ templateとコンパイラを完全解説するよ</a><br />\n<a href=\"https://qiita.com/pokkur/items/4d1fbce6cdafcc12b885\" rel=\"noopener\" target=\"_blank\">( ᐛ )σ「render: h => h(App) 」</a></p>\n<p>上の記述は以下のように書き換えることができる。<br />\nindex.html</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\n&lt;div id=&quot;app&quot;&gt;\r\n  &lt;app&gt;&lt;/app&gt;\r\n&lt;/div&gt;\r\n</pre>\n<p>app.js</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\nVue.component('app', require('./app.vue').default);\r\nnew Vue({\r\n    el: '#app',\r\n})\r\n</pre>\n<p>全然まとまってないが、同じ箇所で悩んだ人の助けになれば。</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Vue.jsの様々なテンプレート記述方法 公式サイトが非常に丁寧に説明されており、だいたい公式サイトで解決できてたのですが、 テンプレートの宣言方法はネット上にも様々なパターンがあり、長く混乱に陥っていたがやっと大悟した&#8230;</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 0,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            37
+        ],
+        "tags": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2188"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/comments?post=2188"
+                }
+            ],
+            "version-history": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2188/revisions"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/media?parent=2188"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/categories?post=2188"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/tags?post=2188"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 2173,
+        "date": "2018-05-01T22:55:39",
+        "date_gmt": "2018-05-01T13:55:39",
+        "guid": {
+            "rendered": "http://matometaru.com/?p=2173"
+        },
+        "modified": "2018-05-07T23:38:00",
+        "modified_gmt": "2018-05-07T14:38:00",
+        "slug": "post-2173",
+        "status": "publish",
+        "type": "post",
+        "link": "http://matometaru.com/post-2173/",
+        "title": {
+            "rendered": "断食を4日間やってみて。"
+        },
+        "content": {
+            "rendered": "<div id=\"toc_container\" class=\"no_bullets\"><p class=\"toc_title\">Contents</p><ul class=\"toc_list\"><li><a href=\"#i\"><span class=\"toc_number toc_depth_1\">1</span> なぜ断食を始めたのか</a><ul><li><a href=\"#i-2\"><span class=\"toc_number toc_depth_2\">1.1</span> 期待していた効果</a></li></ul></li><li><a href=\"#i-3\"><span class=\"toc_number toc_depth_1\">2</span> 断食の準備</a></li><li><a href=\"#1\"><span class=\"toc_number toc_depth_1\">3</span> 断食1日目</a></li><li><a href=\"#2\"><span class=\"toc_number toc_depth_1\">4</span> 断食2日目</a></li><li><a href=\"#3\"><span class=\"toc_number toc_depth_1\">5</span> 断食3日目</a></li><li><a href=\"#4\"><span class=\"toc_number toc_depth_1\">6</span> 断食4日目</a></li><li><a href=\"#5\"><span class=\"toc_number toc_depth_1\">7</span> 断食5日目朝（終了）</a></li><li><a href=\"#i-4\"><span class=\"toc_number toc_depth_1\">8</span> まとめ</a><ul><li><a href=\"#i-5\"><span class=\"toc_number toc_depth_2\">8.1</span> ご飯をしっかり食べたほうが、やる気、競争心が強くなる。</a></li><li><a href=\"#i-6\"><span class=\"toc_number toc_depth_2\">8.2</span> 一日三食は食べる必要ない。</a></li><li><a href=\"#i-7\"><span class=\"toc_number toc_depth_2\">8.3</span> 理想のバランス</a></li><li><a href=\"#i-8\"><span class=\"toc_number toc_depth_2\">8.4</span> 優光泉酵素ドリンクが素晴らしい</a></li><li><a href=\"#i-9\"><span class=\"toc_number toc_depth_2\">8.5</span> またやる？</a></li></ul></li></ul></div>\n<h2><span id=\"i\">なぜ断食を始めたのか</span></h2>\n<p>昔見たまとめ系の記事見てた時に断食の効果すごいなと思っていた程度だったが、<br />\nたまたま再度記事を見てGW利用すれば仕事も影響でず、できると思ったから。<br />\n<a href=\"http://inazumanews2.com/archives/42473439.html\" rel=\"noopener\" target=\"_blank\">2週間ほど思い立って断食したんだがｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗ</a></p>\n<h3><span id=\"i-2\">期待していた効果</span></h3>\n<ul>\n<li>健康面の向上</li>\n<li>精神面の向上</li>\n</ul>\n<p>健康面の向上としては胃腸の休息、腸内環境、肌環境、睡眠環境、<br />\n精神面は記事にあるような、頭の回転の向上、自制心の強化を期待して行った。</p>\n<p><a href=\"https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%B7%E3%83%A5%E3%83%9E%E3%83%AD%E5%AE%9F%E9%A8%93\" rel=\"noopener\" target=\"_blank\"></a></p>\n<h2><span id=\"i-3\">断食の準備</span></h2>\n<p>上で紹介したまとめ記事のやり方は間違えたら死んでしまう可能性もあるので、やり方は参考にしないでいただきたい。</p>\n<p>今回はネットで調べ以下の評判のよかった以下の優光泉を炭酸水で割った物のみ飲む方法で行った。<br />\nお腹が空いたらこれを飲むだけの簡単な方法だ。</p>\n<div data-role=\"amazonjs\" data-asin=\"B005LLYS4W\" data-locale=\"JP\" data-tmpl=\"\" data-img-size=\"\" class=\"asin_B005LLYS4W_JP_ amazonjs_item\"><div class=\"amazonjs_indicator\"><span class=\"amazonjs_indicator_img\"></span><a class=\"amazonjs_indicator_title\" href=\"https://www.amazon.co.jp/%E5%84%AA%E5%85%89%E6%B3%89%E9%85%B5%E7%B4%A0-%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%80%E3%83%BC%E3%83%89%E3%83%BB%E6%A2%85%E5%91%B3-%E3%83%8F%E3%83%BC%E3%83%95%E3%83%9C%E3%83%88%E3%83%AB550ml%C3%972-%E3%82%A8%E3%83%AA%E3%82%AB%E5%81%A5%E5%BA%B7%E9%81%93%E5%A0%B4%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E9%85%B5%E7%B4%A0%E3%83%89%E3%83%AA%E3%83%B3%E3%82%AF-%E5%AE%89%E5%BF%83%E8%BF%94%E9%87%91%E4%BF%9D%E8%A8%BC%E4%BB%98%E3%81%8D/dp/B005LLYS4W?psc=1&SubscriptionId=AKIAJJ7NH3YJYNWQTOLA&tag=metaru731-22&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B005LLYS4W\">優光泉酵素(スタンダード・梅味)　ハーフボトル550ml×2　(エリカ健康道場オリジナル酵素ドリンク) 安心返金保証付き</a><span class=\"amazonjs_indicator_footer\"></span></div></div>\n<div data-role=\"amazonjs\" data-asin=\"B06WWPKWQR\" data-locale=\"JP\" data-tmpl=\"\" data-img-size=\"\" class=\"asin_B06WWPKWQR_JP_ amazonjs_item\"><div class=\"amazonjs_indicator\"><span class=\"amazonjs_indicator_img\"></span><a class=\"amazonjs_indicator_title\" href=\"https://www.amazon.co.jp/%E3%82%B5%E3%83%B3%E3%82%AC%E3%83%AA%E3%82%A2-%E4%BC%8A%E8%B3%80%E3%81%AE%E5%A4%A9%E7%84%B6%E6%B0%B4-%E5%BC%B7%E7%82%AD%E9%85%B8%E6%B0%B4%E3%83%AC%E3%83%A2%E3%83%B3-500ml%C3%9724%E6%9C%AC/dp/B06WWPKWQR?SubscriptionId=AKIAJJ7NH3YJYNWQTOLA&tag=metaru731-22&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06WWPKWQR\">サンガリア 伊賀の天然水 強炭酸水レモン 500ml×24本</a><span class=\"amazonjs_indicator_footer\"></span></div></div>\n<h2><span id=\"1\">断食1日目</span></h2>\n<blockquote class=\"twitter-tweet\" data-lang=\"ja\">\n<p lang=\"ja\" dir=\"ltr\">断食生活1日目<br />食事時間をなくすことこで1日の時間がすごく長いことに気づいた。ルーティンで朝ご飯食べてる人はやめたら時間がかなりできる。朝ご飯食べることに幸せを感じる人は食べた方が良いと思う。</p>\n<p>&mdash; まとめたる (@matometaru1) <a href=\"https://twitter.com/matometaru1/status/989828096659415040?ref_src=twsrc%5Etfw\">2018年4月27日</a></p></blockquote>\n<p><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></p>\n<p>食事がないと幸せが一つ減るんだなと気づいた日。</p>\n<h2><span id=\"2\">断食2日目</span></h2>\n<blockquote class=\"twitter-tweet\" data-lang=\"ja\">\n<p lang=\"ja\" dir=\"ltr\">断食生活2日目（午前）<br />ステーキが目の前にあっても平然とスルーできるくらいの食欲。<br />体重は2キロへってた。飯食ってないのに便はでるからその分だと思われる。</p>\n<p>&mdash; まとめたる (@matometaru1) <a href=\"https://twitter.com/matometaru1/status/990055714889416704?ref_src=twsrc%5Etfw\">2018年4月28日</a></p></blockquote>\n<p><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></p>\n<p>本当にお腹が減らなくてびっくりした日。</p>\n<h2><span id=\"3\">断食3日目</span></h2>\n<blockquote class=\"twitter-tweet\" data-lang=\"ja\">\n<p lang=\"ja\" dir=\"ltr\">断食生活3日目<br />昨日怖れていた空腹感はなかった。体重は排便なしで0.5kg減ってたので、筋肉や脂肪が落ちたと思われる。<br />走る元気はないが、普通の生活は送れる模様。</p>\n<p>この調子だと一週間は続けれそうだが、長けりゃいいもんではないので、明日の夜からはおかゆなどを食す。</p>\n<p>&mdash; まとめたる (@matometaru1) <a href=\"https://twitter.com/matometaru1/status/990596188872237057?ref_src=twsrc%5Etfw\">2018年4月29日</a></p></blockquote>\n<p><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></p>\n<h2><span id=\"4\">断食4日目</span></h2>\n<blockquote class=\"twitter-tweet\" data-lang=\"ja\">\n<p lang=\"ja\" dir=\"ltr\">断食生活4日目<br />宿便？らしきものが出たが、他の人が言うようなスッキリ感はない。<br />食欲はとくに変化なし。エネルギーが足りてないのでやる気が湧かず、家庭菜園をしていた。</p>\n<p>&mdash; まとめたる (@matometaru1) <a href=\"https://twitter.com/matometaru1/status/990952098102624257?ref_src=twsrc%5Etfw\">2018年4月30日</a></p></blockquote>\n<p><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></p>\n<p>社会からフェードアウトし、自然に還りたくなった日。</p>\n<h2><span id=\"5\">断食5日目朝（終了）</span></h2>\n<p>目覚めが最悪だった。頭が痛く、吐き気もあったが優光泉酵素を飲むと回復。カロリーが足りてなかった模様。<br />\nその後、おかゆをいただき断食終了。</p>\n<p>朝：おかゆ、梅干し<br />\n昼：おかゆ、煮卵、梅干し<br />\n夜：おかゆ、にんにく、煮卵</p>\n<p>おかゆ・梅干しめっちゃうまかった。。</p>\n<h2><span id=\"i-4\">まとめ</span></h2>\n<p>期待していた効果はほぼ得られなかった。<br />\n胃腸は休めただろうが、腸内環境が良くなったかは不明。肌に関しても断食中、出来物はできなかったがキレにいにはなっていない。<br />\n睡眠は目覚めが良い日もあったが、朝の目覚めに関しては寝る前のスマホ・PCの見過ぎなどが大きく影響しているのだと感じた。</p>\n<p>体重は-2.5kg。（62.5→60.0）</p>\n<p>最大の収穫は食生活の見直し。</p>\n<h3><span id=\"i-5\">ご飯をしっかり食べたほうが、やる気、競争心が強くなる。</span></h3>\n<p>2日以上固形物を食べないと、やる気や競争心が失われることが分かった。3日目はカメ五郎さんのサバイバルの動画を見て過ごし、４日目は家庭菜園を始める様だ。</p>\n<h3><span id=\"i-6\">一日三食は食べる必要ない。</span></h3>\n<p>ニートや、サラリーマンの休日であれば三食食べる必要はない。4日間何も食べずに過ごした私が言うから間違いない。<br />\nただ、サラリーマンとして仕事をする場合は、三食食べたほうがパフォーマンスは高いと思う。</p>\n<h3><span id=\"i-7\">理想のバランス</span></h3>\n<p>断食をして見て分かった理想の三食の一例を紹介する。</p>\n<p>朝：トッピングを豪華にしたおかゆ<br />\n昼：好きなもの（肉とか）<br />\n夜：おかゆ、味噌汁、菜物</p>\n<p>朝食は「トッピングを豪華にしたおかゆ」を例に上げたが、胃腸にも良く、食に幸せも感じられるであれば何でも良い。<br />\n昼食は好きなもの食べて昼からエネルギッシュに働くため。<br />\n夕食は睡眠時の胃腸の負担を減らし、次の朝気持ちよく目覚めるため。</p>\n<p>今までは夜の食事が一番、胃腸に負担をかけるものが多く、時間も22時〜ということが多かった。<br />\n胃腸に負担をかけ、さらにエネルギーがあり余り夜更かしをしてしまい、朝の目覚めが最悪と言うパターンになるのは必然。</p>\n<h3><span id=\"i-8\">優光泉酵素ドリンクが素晴らしい</span></h3>\n<p>全くと言っていいほどお腹はすかなかった。味も美味しいし、健康にもいい。非常食にもなる。（４日間これだけでいい）<br />\n今まで私の中で最強のドリンクとして君臨していた明治の飲むヨーグルトを越してしまった。</p>\n<div data-role=\"amazonjs\" data-asin=\"B005LLYS4W\" data-locale=\"JP\" data-tmpl=\"\" data-img-size=\"\" class=\"asin_B005LLYS4W_JP_ amazonjs_item\"><div class=\"amazonjs_indicator\"><span class=\"amazonjs_indicator_img\"></span><a class=\"amazonjs_indicator_title\" href=\"https://www.amazon.co.jp/%E5%84%AA%E5%85%89%E6%B3%89%E9%85%B5%E7%B4%A0-%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%80%E3%83%BC%E3%83%89%E3%83%BB%E6%A2%85%E5%91%B3-%E3%83%8F%E3%83%BC%E3%83%95%E3%83%9C%E3%83%88%E3%83%AB550ml%C3%972-%E3%82%A8%E3%83%AA%E3%82%AB%E5%81%A5%E5%BA%B7%E9%81%93%E5%A0%B4%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E9%85%B5%E7%B4%A0%E3%83%89%E3%83%AA%E3%83%B3%E3%82%AF-%E5%AE%89%E5%BF%83%E8%BF%94%E9%87%91%E4%BF%9D%E8%A8%BC%E4%BB%98%E3%81%8D/dp/B005LLYS4W?psc=1&SubscriptionId=AKIAJJ7NH3YJYNWQTOLA&tag=metaru731-22&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B005LLYS4W\">優光泉酵素(スタンダード・梅味)　ハーフボトル550ml×2　(エリカ健康道場オリジナル酵素ドリンク) 安心返金保証付き</a><span class=\"amazonjs_indicator_footer\"></span></div></div>\n<p>断食じゃなくてもダイエットとしてもおすすめのドリンク。まじでお腹減らない。（個人による）</p>\n<h3><span id=\"i-9\">またやる？</span></h3>\n<p>健康面の効果が薄かったので多分やらない。お腹は減らないけど、食事の楽しみがないのは結構きつい。<br />\n暴飲暴食した次の日は朝、昼抜いて夜おかゆのような生活はしていきます。</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Contents1 なぜ断食を始めたのか1.1 期待していた効果2 断食の準備3 断食1日目4 断食2日目5 断食3日目6 断食4日目7 断食5日目朝（終了）8 まとめ8.1 ご飯をしっかり食べたほうが、やる気、競争心が&#8230;</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 2180,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            1
+        ],
+        "tags": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2173"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/comments?post=2173"
+                }
+            ],
+            "version-history": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2173/revisions"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/media/2180"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/media?parent=2173"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/categories?post=2173"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/tags?post=2173"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 2160,
+        "date": "2018-03-06T01:42:19",
+        "date_gmt": "2018-03-05T16:42:19",
+        "guid": {
+            "rendered": "http://matometaru.com/?p=2160"
+        },
+        "modified": "2018-03-06T02:02:09",
+        "modified_gmt": "2018-03-05T17:02:09",
+        "slug": "post-2160",
+        "status": "publish",
+        "type": "post",
+        "link": "http://matometaru.com/post-2160/",
+        "title": {
+            "rendered": "Comment Star Ratingに新機能を追加しました。"
+        },
+        "content": {
+            "rendered": "<p>前の記事が縦長になりすぎてもよくないので、新機能の追加の報告はこちらで行います。</p>\n<h2>総合ランキングを表示する機能の追加</h2>\n<p>以下のショートコードで総合ランキングを出力します。デフォルト値がpost_type=&#8221;post&#8221;なので、投稿で使う場合は引数はなしでも大丈夫です。<br />\n[<code>comment_star_rating_ranking post_type=\"post\"</code>]</p>\n<p>【投稿の場合】<br />\n[<code>comment_star_rating_ranking</code>]</p>\n<p>【カスタム投稿（イベント:event）の場合】<br />\n[<code>comment_star_rating_ranking post_type=\"event\"</code>]<br />\n<img src=\"http://matometaru.com/wp-content/uploads/2018/03/a.png\" alt=\"総合ランキングを出力\" width=\"498\" height=\"192\" class=\"alignnone size-full wp-image-2161\" srcset=\"http://matometaru.com/wp-content/uploads/2018/03/a.png 498w, http://matometaru.com/wp-content/uploads/2018/03/a-300x116.png 300w, http://matometaru.com/wp-content/uploads/2018/03/a-320x123.png 320w\" sizes=\"(max-width: 498px) 100vw, 498px\" /></p>\n<h3>テンプレートファイルでも使いたい場合</h3>\n<p>post_metaテーブルのcsr_average_ratingに総合スコアを保存しているので、以下のコードでテンプレートファイル上で使っていただけます。<br />\n<br />\n$args = array(<br />\n\t&#8216;post_type&#8217; => $post_type,<br />\n\t&#8216;posts_per_page&#8217; => 3,<br />\n\t&#8216;order&#8217; => &#8216;DESC&#8217;,<br />\n\t&#8216;meta_key&#8217;=>&#8217;csr_average_rating&#8217;,<br />\n\t&#8216;orderby&#8217;=>&#8217;meta_value&#8217;,<br />\n);<br />\n$posts = get_posts($args);<br />\n</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>前の記事が縦長になりすぎてもよくないので、新機能の追加の報告はこちらで行います。 総合ランキングを表示する機能の追加 以下のショートコードで総合ランキングを出力します。デフォルト値がpost_type=&#8221;po&#8230;</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 2166,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            8
+        ],
+        "tags": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2160"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/comments?post=2160"
+                }
+            ],
+            "version-history": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2160/revisions"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/media/2166"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/media?parent=2160"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/categories?post=2160"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/tags?post=2160"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 2154,
+        "date": "2018-01-25T07:03:58",
+        "date_gmt": "2018-01-24T22:03:58",
+        "guid": {
+            "rendered": "http://matometaru.com/?p=2154"
+        },
+        "modified": "2018-01-25T07:03:58",
+        "modified_gmt": "2018-01-24T22:03:58",
+        "slug": "laravel",
+        "status": "publish",
+        "type": "post",
+        "link": "http://matometaru.com/laravel/",
+        "title": {
+            "rendered": "【Laravel】ビューコンポーザとヘルパー関数を実装する"
+        },
+        "content": {
+            "rendered": "<div id=\"toc_container\" class=\"no_bullets\"><p class=\"toc_title\">Contents</p><ul class=\"toc_list\"><li><a href=\"#i\"><span class=\"toc_number toc_depth_1\">1</span> ビューコンポーザとは</a></li><li><a href=\"#i-2\"><span class=\"toc_number toc_depth_1\">2</span> ヘルパ関数とは</a></li><li><a href=\"#i-3\"><span class=\"toc_number toc_depth_1\">3</span> サービスプロバイダとは</a></li><li><a href=\"#i-4\"><span class=\"toc_number toc_depth_1\">4</span> ビューコンポーザとヘルパ関数の使い分け</a></li></ul></div>\n<h2><span id=\"i\">ビューコンポーザとは</span></h2>\n<p>ビューには、コントローターとは別にビジネスロジックを使って必要な情報を処理し、ビューにデータを結合する機能。</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\nView::composer('*', function($view){\r\n\t$view-&gt;with('matometaru', 'まとめたる');\r\n});\r\n\r\n// viewで使用\r\n{{ $matometaru }}\r\n</pre>\n<p>hello/index.blade.phpでのみ使いたい場合は以下のように、第一引数にテンプレートを指定する。</p>\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">\r\nView::composer('hello.index', function($view){\r\n\t$view-&gt;with('matometaru', 'まとめたる');\r\n});\r\n</pre>\n<h2><span id=\"i-2\">ヘルパ関数とは</span></h2>\n<p>フレームワークに使用されているグローバル関数。<br />\nユーザーが新たに関数を追加し、アプリケーションに組み込むことも可能。<br />\n<a href=\"https://readouble.com/laravel/5.3/ja/helpers.html\" rel=\"noopener\" target=\"_blank\">Laravel 5.3 ヘルパ関数</a></p>\n<p>app/Helper</p>\n<h2><span id=\"i-3\">サービスプロバイダとは</span></h2>\n<p>サービスを提供するための仕組み。<br />\n<div class=\"blog-card external-blog-card blog-card-thumbnail-left cf\"><div class=\"blog-card-thumbnail\"><a href=\"https://readouble.com/laravel/5.3/ja/providers.html\" class=\"blog-card-thumbnail-link\"><img src=\"http://s.wordpress.com/mshots/v1/https%3A%2F%2Freadouble.com%2Flaravel%2F5.3%2Fja%2Fproviders.html\" alt=\"\" class=\"blog-card-thumb-image\" height=\"100\" width=\"100\" sizes=\"(max-width: 100px) 100vw, 100px\" /></a></div><div class=\"blog-card-content\"><div class=\"blog-card-title\"><a href=\"https://readouble.com/laravel/5.3/ja/providers.html\" class=\"blog-card-title-link\">&#12469;&#12540;&#12499;&#12473;&#12503;&#12525;&#12496;&#12452;&#12480; 5.3 Laravel</a></div><div class=\"blog-card-excerpt\"></div></div><div class=\"blog-card-footer\"><div class=\"blog-card-site\"><span class=\"blog-card-favicon\"><img src=\"//www.google.com/s2/favicons?domain=readouble.com\" class=\"blog-card-favicon-img\" alt=\"\" width=\"16\" height=\"16\" /></span>readouble.com</div><div class=\"blog-card-hatebu\"><a href=\"//b.hatena.ne.jp/entry/https://readouble.com/laravel/5.3/ja/providers.html\" rel=\"nofollow\"><img src=\"//b.hatena.ne.jp/entry/image/https://readouble.com/laravel/5.3/ja/providers.html\" alt=\"\" /></a></div></div></div>\nLaravelにMVC以外に新たな機能を追加したい場合は、サービスプロバイダに登録する、または既に登録されてるファイルに追記する必要がある。</p>\n<p>ヘルパー関数も、ビューコンポーザもサービスプロバイダから実行するのがベストだと思われる。<br />\napp/Providers</p>\n<h2><span id=\"i-4\">ビューコンポーザとヘルパ関数の使い分け</span></h2>\n<p>途中ですが公開。</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Contents1 ビューコンポーザとは2 ヘルパ関数とは3 サービスプロバイダとは4 ビューコンポーザとヘルパ関数の使い分け ビューコンポーザとは ビューには、コントローターとは別にビジネスロジックを使って必要な情報を&#8230;</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 0,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            47
+        ],
+        "tags": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2154"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/comments?post=2154"
+                }
+            ],
+            "version-history": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/posts/2154/revisions"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http://matometaru.com/wp-json/wp/v2/media?parent=2154"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/categories?post=2154"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "http://matometaru.com/wp-json/wp/v2/tags?post=2154"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    }
+]
