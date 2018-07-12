@@ -8,7 +8,7 @@
         <span v-if="drink.price > 150">たかい！</span>
       </li>
     </ul>
-    <p>{{url}}</p>
+    <!-- <p>{{url}}</p> -->
     <button @click="method[option]">{{option}}()</button>
   </div>
 </template>
