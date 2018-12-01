@@ -20,3 +20,10 @@ category: [Programing]
 ## プロダクト
 
 * GitHubでスター100以上
+
+## 2018.7~9  
+
+* Vue.jsコンポーネントnpmパッケージ登録
+* Laravel + Vue.jsのECサイト
+* firebase * Vue.jsの収益アプリ
+* Vue Nativeのアプリ化

@@ -9,10 +9,13 @@
     "gsap": "^2.0.1",
     "jquery": "^3.3.1",
     "lodash": "^4.17.10",
+    "npm-install-missing": "^0.1.4",
     "sweet-scroll": "^3.0.1",
     "velocity-animate": "^1.5.1",
     "vue-google-adsense": "^1.2.0",
-    "vue-script2": "^2.0.3"
+    "vue-metal-grid": "^0.0.3",
+    "vue-script2": "^2.0.3",
+    "vue-transition-group-plus": "^0.1.0"
   },
   "devDependencies": {
     "vuepress": "^0.10.2"

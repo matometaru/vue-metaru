@@ -155,6 +155,13 @@ drinsk_tax = drinks.slice().map(row => {name: row.name, price:row.price * 1.08})
 以下のリンクはmapをかなり有効的に使っている例です。
 [JavaScriptで実践！なんちゃって関数型プログラミングで九九表を作ってみよう！ ｜ SiTest \(サイテスト\) ブログ](https://sitest.jp/blog/?p=3685)
 
+スプレッド演算子を使って価格の最大値を取得
+
+```
+Math.max(...drinks.map(m => m.price));
+>> 200
+```
+
 ### reduce()
 
 今までの便利な関数を全てreduce()でカバーできるくらいの便利な関数です。
